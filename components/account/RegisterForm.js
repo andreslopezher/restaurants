@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { Button, Input, Icon } from 'react-native-elements'
 import { size } from 'lodash'
 import { useNavigation } from '@react-navigation/native'
@@ -118,8 +118,8 @@ export default function RegisterForm() {
                 onPress= {() => doRegisterUser()}
             />
             <Loading
-                    isVisible={loading}
-                    text="Creando cuenta..."
+                isVisible={loading}
+                text="Creando cuenta..."
             />
         </View>
     )
